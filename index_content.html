@@ -1,0 +1,1402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head> 
+<meta name="renderer" content="webkit|ie_comp|ie-stand" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="renderer" content="webkit" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<!-- DTS2017082408289 -->
+<meta http-equiv="Expires" content="0"> 
+<meta http-equiv="Pragma" content="no-cache"> 
+<meta http-equiv="Cache-Control" content="no-cache"> 
+<meta http-equiv="Cache" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-store">
+<title></title>
+<link type="text/css" href="./css/style.css?v=time" rel="stylesheet"/>
+<link type="text/css" href="./css/nc.css?v=time" rel="stylesheet"/>
+<script type="text/javascript" src="./config/config.js?v=time"></script>
+<script type="text/javascript" src="./script/version_config.js?v=time"></script>
+<script type="text/javascript" src="./script/menucustomize.js?v=time"></script>
+<script type="text/javascript" src="./config/language_cn.js?v=time"></script>
+<script type="text/javascript" src="./script/debug.js?v=time"></script>
+<script type="text/javascript" src="./script/logic.js?v=time"></script>
+<script type="text/javascript" src="./script/nc.js?v=time"></script>
+<style type="text/css">
+/*----------------------style.css-----------------------------*/
+body,div,span,td,label,a{
+	font-size:12px;
+	font-family:"Microsoft Yahei",sans-serif;
+	color:#7a7a7a;
+}
+body{
+	margin:0px;	
+	color:#7a7a7a;
+}
+div{
+	position:relative;
+}
+.f_top{
+	height:100px;
+	width:958px;
+	margin:auto;
+}
+div#logo_after{
+	height:53px;
+	width:106px;
+	float:left;
+}
+#logo{
+	width:958px;
+	/* background:#0085d1; */
+    background-image: url(./images/top_bg.png);
+}
+.f_main_bg{
+	margin:auto;
+	width:808px;
+}
+.f_main{
+	min-height:550px;
+	width:1000px;
+	margin:auto;
+	background:#ececec;
+	float:left;
+}
+.f_left{
+	float:left;
+	height:550px;
+	width:172px;
+}
+.f_left span{
+	display:block;
+	height:25px;
+	line-height:25px;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+}
+div#menu_top{
+	width:172px;
+	height:18px;
+}
+div#menu_layer{
+	width:172px;
+}
+div#menu_bottom{
+	width:172px;
+	height:20px;
+}
+.f_center{
+	float:left;
+	min-height:550px;
+	width:648px;
+	padding-top:3px;
+	background:white;
+}
+*html .f_center{ 
+	height:550px;
+}
+.f_right{
+	float:left;
+	min-height:550px;
+	width:178px;
+}
+.f_right span{
+	display:block;
+	height:25px;
+	line-height:25px;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+}
+div#help_top{
+	float:right;
+	width:166px;
+	height:18px;
+	_background:url('./images/left_031.jpg') no-repeat;	
+}
+div#help_layer{
+	float:right;
+	width:166px;
+}
+div#help_bottom{
+	float:right;
+	width:166px;
+	height:18px;
+}
+.f_bottom{
+	height:25px;
+	width:958px;
+	clear:left;
+	margin:auto;
+	/* background:#0085d1; */
+}
+.f_bottom_border{
+	width:100%;
+	_height:6px;
+	background:#d1d1d1;
+	text-align:center;
+}
+.f_bottom span{
+	display:block;
+	position:absolute;
+	right:10px;
+	top:10px;
+	color:#f3f3f3;
+}
+.m_menu{
+	width:100%;
+	min-height:300px;
+	margin:auto;
+	color:#7a7a7a;
+}
+.menu_parent{
+	width:172px;
+	height:25px;
+	line-height:25px;
+	text-align:center;
+	background:url("./images/bg_leftmenu.gif") no-repeat;
+	cursor:pointer;
+	float:left;
+}
+.m_p_img{
+	height:10px;
+	width:10px;
+	margin:7px 2px 0 15px;
+	float:left;
+}
+*html .m_p_img{margin-left:8px;}
+.m_no{
+	background:url('./images/icon_no.gif') no-repeat;
+}
+.m_jia{
+	background:url('./images/icon_jia.gif') no-repeat;
+}
+.m_now{
+	background:url('./images/icon_now.gif') no-repeat;
+}
+.m_jian{
+	background:url('./images/icon_jian.gif') no-repeat;
+}
+.m_p_txt{
+	float:left;
+	font-weight:bold;
+}
+.m_c_img{
+	height:10px;
+	width:10px;
+	margin:5px 2px 0 30px;
+	float:left;
+}
+*html .m_c_img{ margin-left:15px;}
+.m_c_txt{
+	float:left;
+}
+.menu_child_panel{
+	width:172px;
+	display:none;
+	float:left;
+}
+.menu_child{
+	width:172px;	
+	height:18px;
+	line-height:18px;
+	text-align:center;
+	cursor:pointer;
+	color:#666;
+	float:left;
+}
+.menu_child_checked{
+	width:172px;	
+	height:18px;
+	line-height:18px;
+	text-align:center;
+	cursor:pointer;
+	color:#333;
+	float:left;
+}
+.f_menu_top{
+	float:left;
+	width:640px;
+	padding: 0 4px;
+	height:50px;
+	border:1px solid #333;
+}
+/* ----------------------nc.css------------------------------*/
+.df_panel{
+	float:left;
+	width:640px;
+	padding:0 4px;
+}
+.df_panel_ie{
+	width:634px;
+	padding:0 4px;
+}
+
+.df_panel_title{
+	width:630px;
+	float:left;
+	height:25px;
+	line-height:25px;
+	padding:0 0 0 10px;
+	font-weight:bold;
+	border-bottom:solid 1px #539b35;
+	color:#539b35;
+}
+
+.df_panel_titlea{
+	width:630px;
+	float:left;
+	height:25px;
+	line-height:25px;
+	padding:0 0 0 10px;
+}
+
+.df_panel_content{
+	width:100%;
+	float:left;
+}
+.df_tag_ie{
+	width:639px;
+	min-height:25px;	
+	margin-bottom:1px;
+	background:#f3f8fd;
+	border-bottom:solid 1px #b3d2ef;
+}
+.df_tag_iewhite{
+	width:639px;
+	min-height:25px;	
+	margin-bottom:1px;
+	background:#ffffff;
+	border-bottom:solid 1px #ffffff;
+}
+.df_tag{
+	float:left;
+	width:100%;
+	min-height:25px;	
+	margin-bottom:1px;
+	background:#f7f7f7;
+	border-bottom:solid 1px #e2e2e2;
+}
+.df_tagwhite{
+	float:left;
+	width:100%;
+	min-height:25px;	
+	margin-bottom:1px;
+	background:#ffffff;
+	border-bottom:solid 1px #ffffff;
+}
+.df_tagone{
+	float:left;
+	width:100%;
+	min-height:25px;	
+	margin-bottom:1px;
+	background:#ffffff;
+	border-bottom:solid 0px #e2e2e2;
+}
+.tr_bgcolor{
+	background:#e5f8f5;
+	width:640px;
+}
+
+.cell_display{
+	display: none;
+}
+
+.tr_bgcolornormal{
+	background:#f7f7f7;
+}
+.df_btn_tag{
+	clear:both;
+	min-height:30px;	
+	line-height:30px;	
+	margin-bottom:1px;
+	background:#f7f7f7;
+	padding-left: 165px;
+}
+.df_btn_tagone{
+	clear:both;
+	float:right;
+	min-height:30px;
+	max-height:30px;	
+	line-height:30px;	
+	margin-bottom:1px;
+}
+*html .df_btn_tag{ float:left; clear:none;}
+.df_btn_tag_ie{
+	clear:both;
+	min-height:30px;
+	line-height:30px;	
+	margin-bottom:1px;
+	width:475px;
+	_padding-left: 165px;
+}
+.df_tab_tag{
+	float:left;
+	width:640px;
+	background:#f7f7f7;
+}
+.df_tab{
+	width:640px;
+}
+.df_tabc{
+	width:640px;
+	border-collapse:collapse; 
+	color:#666;
+}
+.df_tabdiv{  
+	width:100%;
+	min-height:25px;
+	max-height:350px;
+	overflow-y:auto;
+}
+.df_tabdiv1{  
+	border:1px solid;
+	width:100%;
+	min-height:25px;
+	max-height:350px;
+	overflow-y:auto;
+	height:300px;
+	width:640px;
+}
+.df_thead{
+	text-align:center;
+}
+.df_theadd{
+	text-align:center;
+}
+.df_theadd th{
+	text-align:center;
+	color:#666;
+	border:1px solid #D2D2D2;
+	background:#e7e7e7;
+	cellspacing:0px;
+	border-collapse:collapse;
+	font-size:12px;
+}
+.df_theadd td{
+	text-align:left;
+	padding:0;
+	border:1px solid #D2D2D2;
+	cellspacing:0px;
+	border-collapse:collapse;
+}
+.df_theadc{
+	text-align:left;
+}
+.df_theadc th{
+	text-align:left;
+	color:#666;
+	border:1px solid #D2D2D2;
+	background:#e7e7e7;
+	cellspacing:0px;
+	border-collapse:collapse;
+	font-size:12px;
+	width:28%;
+}
+.df_theadc td{
+	text-align:left;
+	padding:0;
+	border:1px solid #D2D2D2;
+	cellspacing:0px;
+	border-collapse:collapse;
+	width:72%;
+}
+.df_thead td{
+	background:#ececec;
+}
+.df_tbody{
+	text-align:center;
+}
+.df_tbodyd{
+	text-align:center;
+}
+.df_tbodyd td{
+	text-align:left;
+	padding:0;
+	border:1px solid #D2D2D2;
+	cellspacing:0px;
+	border-collapse:collapse;
+}
+.df_tbody td{
+	background:#f3f8fd;
+}
+.df_tfoot{
+	background: none repeat scroll 0 0 #F7F7F7;
+	width:619px;
+	height:25px;
+	line-height:25px;
+	padding:0 10px 0 10px;
+	margin:1px;
+}
+.df_tfootthree{
+	background:#e5f8f5;
+	width:619px;
+	height:25px;
+	line-height:25px;
+	padding:0 10px 0 10px;
+	margin:1px;
+}
+.tab_del_mod
+{
+	width:40px;
+}
+.tab_mod_btn{
+	float:left;
+	background:url("./images/edit.gif");
+	width:16px;
+	height:16px;
+	cursor:pointer;
+	margin-left:5px;
+}
+*html .tab_mod_btn
+{
+	margin-left:2px;
+}
+.tab_link_btn{
+	float:left;
+	background:url("./images/link.gif");
+	width:16px;
+	height:16px;
+	cursor:pointer;
+	margin-left:5px;
+}
+*html .tab_link_btn{ margin-left:2px;}
+.tab_del_btn{
+	width:16px;
+	height:16px;
+	cursor:pointer;
+	margin-left:20px;
+}
+*html .tab_del_btn{ margin-left:10px;}
+.tab_can_btn{
+	background:url("./images/back.gif");
+	width:16px;
+	height:16px;
+	cursor:pointer;
+	margin-left:25px;
+}
+
+.tab_link{
+	cursor:pointer;
+	color:#0000ff;
+}
+
+*html .tab_can_btn{ margin-left:10px;}
+*+html .tab_can_btn{ margin-left:10px;}
+.df_btn{
+    background-color: #F2F2F2;
+    border: 1px solid #D2D2D2;
+    color: #7a7a7a;
+    cursor: pointer;
+	min-width:85px;
+	margin:0 5px 0 5px;
+	font-size:12px;	
+	padding:2px;
+	font-family: "Microsoft Yahei",sans-serif;
+	height:23px;
+}
+.displayhide{
+	display: none;
+	background:#e5f8f5;
+}
+.displayshow{
+	display: block;
+	background:#e5f8f5;
+}
+.df_label{
+	display: block;
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    text-align: right;
+    width: 160px;
+	background:#ececec;
+	padding-left:5px;
+	padding-right:5px;
+}
+.df_labelwhite{
+	display: block;
+  float: left;
+  height: 25px;
+  line-height: 25px;
+  text-align: right;
+    width: 160px;
+	background:#ffffff;
+	padding-left:5px;
+	padding-right:5px;
+}
+.df_labelc{
+	display: block;
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    text-align: left;
+    width: 160px;
+	background:#ececec;
+	padding-left:5px;
+	padding-right:5px;
+}
+.df_labelb{
+	display: block;
+  float: left;
+  height: 15px;
+  line-height: 15px;
+  text-align: left;
+	background:#ffffff;
+	padding-left:10px;
+}
+.df_label_two{
+	display: block;
+    float: left;
+    height: 50px;
+    line-height: 25px;
+    text-align: right;
+    width: 160px;
+	background:#ececec;
+	padding-left:5px;
+	padding-right:5px;
+}
+.df_text{
+	border: 1px solid #D2D2D2;
+	margin:1px 1px 1px 2px;
+	height:18px;
+    width: 160px;	
+	float:left;
+	font-family:"Microsoft Yahei",sans-serif;
+}
+.df_text1{
+	border: 1px solid #D2D2D2;
+	margin:1px 1px 1px 2px;
+	height:18px;
+    width: 450px;	
+	float:left;
+	font-family:"Microsoft Yahei",sans-serif;
+}
+.df_text_fire{
+	border: 1px solid #D2D2D2;
+	margin:1px 1px 1px 2px;
+	height:18px;
+	margin-left:2px;
+    width: 160px;	
+}
+.df_time_text{
+	border: 1px solid #D2D2D2;
+	margin:2px;
+    width: 60px;	
+	float:left;
+	font-family:"Microsoft Yahei",sans-serif;
+}
+.text_after{
+	border:1px solid #d2d2d2;
+	margin:2px;
+	width:40px;
+}
+.df_check_panel{
+	float:left;
+	display:none;
+}
+.df_check_layer{
+	position:absolute;
+	left:-10px;
+	top:-25px;
+}
+.df_check_info{
+	min-width:50px;
+	height:20px;
+	line-height:20px;
+	border:solid 1px #ffd700;
+	background:#ffffe1;
+	z-index:5;
+}
+.df_check_p{
+	min-width:50px;
+	height:20px;
+	line-height:20px;
+	background:url("./images/help_b1.jpg") no-repeat;
+	margin-top:-10px;
+}
+.df_radio{
+	float:left;
+}
+.df_textarea{
+	border: 1px solid #D2D2D2;
+	margin:1px 1px 1px 2px;
+	line-height:18px; 
+  width: 400px;	
+  height:160px;
+	float:left;
+	overflow-y:auto;
+	resize:none;
+}
+.df_textareasingle{
+	border: 1px solid #D2D2D2;
+	margin:1px 1px 1px 2px;
+	line-height:18px; 
+  width: 630px;	
+  height:328px;
+	float:left;
+	overflow-y:auto;
+	resize:none;
+}
+.df_checkbox{
+	float:left;
+	margin:6px 2px 0 5px;
+}
+.df_checkbox_ie{
+    float:left;
+	margin:3px 2px 0 5px;
+}
+.df_two_after{
+	display:block;
+	height:20px;
+	line-height:20px;
+	float:left;
+}
+.df_radio_txt{
+	display:block;
+	height:20px;
+	line-height:20px;
+	float:left;
+	width:65px;
+	word-spacing:-1px;
+}
+.radio_panel{
+	float:left;
+	height:20px;
+	line-height:20px;
+	padding:2px;
+}
+.radio_panel_single{
+	float:left;
+	width:100%;
+	min-height:20px;
+	line-height:20px;
+	padding:2px;
+}
+.radio_panel_line{
+	float:left;
+	min-height:20px;
+	line-height:20px;
+	padding:2px;
+	width:464px;
+}
+*html .radio_panel_line{ width:460px;}
+.two_panel_line{
+	float:left;
+	min-height:20px;
+	line-height:20px;
+	padding:1px;
+	width:464px;
+}
+.df_i_contextone{
+	min-height:25px;
+	line-height:25px;
+	margin:0 10px;
+	background:#ffffff;
+}
+.df_i_context{
+	min-height:25px;
+	line-height:25px;
+	margin:0 10px;
+	color:#990000;
+}
+.df_labelone{
+  float: left;
+  height: 25px;
+  min-height:25px;
+  line-height: 25px;
+  width: 630px;
+	background:#ececec;
+	padding-left:5px;
+	padding-right:5px;
+}
+.df_context_ie{
+	width:464px;
+	min-height:25px;
+	line-height:25px;
+	padding:0 0 0 5px;
+	background:#f7f7f7;
+}
+.df_contextb_ie{
+	width:464px;
+	min-height:15px;
+	line-height:15px;
+	padding:0 0 0 5px;
+	background:#ffffff;
+}
+.df_context{
+	display:block;
+	float:left;
+	width:464px;
+	min-height:25px;
+	line-height:25px;
+	padding:0 0 0 5px;
+	background:#f7f7f7;
+}
+.df_contextb{
+	display:block;
+	float:left;
+	width:464px;
+	min-height:15px;
+	line-height:15px;
+	padding:0 0 0 5px;
+	background:#ffffff;
+}
+.df_select_ie{
+	border: 1px solid #D2D2D2;
+	margin:2px;
+	background:#f3f3f3;
+	font-size:12px;
+	color:#7a7a7a;
+	width:165px;
+	height:20px;
+	float:left;
+	font-family: "Microsoft Yahei",sans-serif;
+}
+.df_select_ie1{
+	border: 1px solid #D2D2D2;
+	margin:2px;
+	background:#f3f3f3;
+	font-size:12px;
+	color:#7a7a7a;
+	width:300px;
+	height:20px;
+	float:left;
+	font-family: "Microsoft Yahei",sans-serif;
+	
+}
+.df_select{
+	border: 1px solid #D2D2D2;
+	margin:2px 1px 1px 2px;
+	background:#f3f3f3;
+	font-size:12px;
+	color:#7a7a7a;
+	width:163px;
+	height:20px;
+	float:left;
+	font-family:  "Microsoft Yahei",sans-serif;
+}
+.df_select1{
+	border: 1px solid #D2D2D2;
+	margin:2px 1px 1px 2px;
+	background:#f3f3f3;
+	font-size:12px;
+	color:#7a7a7a;
+	width:300px;
+	height:20px;
+	float:left;
+	font-family:  "Microsoft Yahei",sans-serif;
+}
+.df_select_tab{
+	border: 1px solid #D2D2D2;
+	margin:2px;
+	background:#f3f3f3;
+	font-size:12px;
+	color:#7a7a7a;
+	width:163px;
+	height:20px;
+	font-family:  "Microsoft Yahei",sans-serif;
+}
+.df_after{
+	float:left;
+	margin-left: 5px;
+	_padding:0 5px;
+	min-height:25px;
+	line-height:25px;
+	word-spacing:-2px;
+}
+.df_context_after{
+	min-height:25px;
+	line-height:25px;
+}
+.df_after_two{
+    float: left;
+    line-height: 25px;
+    min-height: 25px;
+}
+.df_after_three{
+	margin-left: 5px;
+	min-height:25px;
+	line-height:25px;
+}
+.df_checkbox_panel{
+	height:25px;
+	line-height:25px;
+	float:left;
+}
+.df_checkbox_label{
+	float:left;
+}
+.df_line{
+	float:left;
+	height:25px;
+	line-height:25px;
+}
+.df_h_tpanel{
+	float:right;
+	width:155px;
+	padding:0 0 0 5px;
+	_background:#8fc7fa;
+	height:20px;
+	line-height:20px;
+	font-weight:bold;
+	border-bottom:solid 1px white;
+	border-top:solid 1px white;
+	margin-bottom:4px;
+}
+.df_h_cpanel{
+	padding:10px;
+	color:#333;
+}
+.df_h_mpanel{
+	position:absolute;
+}
+.df_h_mbtn{
+	font-weight:bold;
+	text-align:right;
+	cursor:pointer;
+}
+.df_h_close{
+	position:absolute;
+	font-weight:bold;
+	width:16px;
+	height:16px;
+	right:0px;
+	top:0px;
+	cursor:pointer;
+}
+.more_h_table{
+	border:solid 1px #cfe0f0;
+	background:#f3f3f3;
+}
+.more_h_head{
+	min-width:100px;
+	background:#ececec;
+	font-weight:bold;
+}
+.more_h_content{
+	border-bottom:solid 1px #cfe0f0;
+	text-align:left;
+}
+.more_h_content_after{
+	text-align:left;
+}
+.df_load_tip{
+	height:30px;
+	line-height:30px;
+	padding:3px 0 3px 30px;
+	font-weight:bold;
+	text-align:center;
+}
+.df_load{
+	height:20px;
+	line-height:20px;
+	width:400px;
+	border:solid 1px #d2d2d2;
+	margin:auto;
+	background:white;
+}
+.df_run{
+	width:0px;	
+	background:#B6FECD;
+	height:18px;
+	line-height:18px;
+	margin:1px;
+	text-align:center;
+}
+.df_math{
+	position:absolute;
+	width:398px;
+	top:1px;
+	left:1px;
+	height:18px;
+	line-height:18px;
+	text-align:center;
+	color:#333;
+}
+.df_lock_bg{
+	position:absolute;
+	left:0px;
+	top:0px;
+	background:#333;
+	opacity:0.3;
+	filter:alpha(opacity=20);
+	z-index:100;
+	display:none;
+}
+.df_lock_load{
+	position:absolute;
+	min-width:180px;
+	padding:20px 5px 20px 5px;
+	background:#f3f3f3;
+	border:solid 1px #999;
+	z-index:200;
+	display:none;
+	text-align:center;
+	font-size:12px;
+	color:#333;
+}
+.txt_more{
+	float:left;
+	height:25px;
+	line-height:25px;
+}
+.txt_two{
+	float:left;
+	display:block;
+	height:20px;
+	line-height:20px;
+}
+.df_limit_line{
+    display:block;
+    float:left;
+    height:25px;
+    line-height:25px;
+    width:10px;
+    text-align:center;
+}
+.df_con{
+    float:left;
+    min-width:100px;
+    min-height:25px;
+    line-height:25px;
+    padding:0 0 0 5px;
+    background:#f3f8fd;
+    width: 100px;
+}
+.df_con_after{
+    float:left;
+    width:200px;
+    min-height:25px;
+    line-height:25px;
+    padding:0 0 0 5px;
+}
+.df_page_size_btn{
+    padding:1px;
+    margin:2px 30px 2px 2px;
+    float:left;
+    background-color: #F2F2F2;
+    border: 1px solid #CBCBCB;
+    color: #7A7A7A;
+	font-size:12px;
+	font-family:"Microsoft Yahei",sans-serif;
+	height:20px;
+}
+.df_page_btn1{
+	text-decoration:underline;
+    font-size:12px;
+    width:25px;
+	height:20px;
+    padding:1px;
+    margin:2px;
+    float:left;
+    border: 0px;
+	background:url("./images/first.png") no-repeat center;
+}
+.df_page_btn2{
+	text-decoration:underline;
+    font-size:12px;
+	height:20px;
+    width:25px;
+    padding:1px;
+    margin:2px;
+    float:left;
+    border: 0px;
+	background:url("./images/pre.png") no-repeat center;
+}
+.df_page_btn3{
+	text-decoration:underline;
+    font-size:12px;
+    width:25px;
+	height:20px;
+    padding:1px;
+    margin:2px;
+    float:left;
+    border: 0px;
+	background:url("./images/nextt.png") no-repeat center;
+}
+.df_page_btn4{
+	text-decoration:underline;
+    font-size:12px;
+    width:25px;
+	height:20px;
+    padding:1px;
+    margin:2px;
+    float:left;
+    border: 0px;
+	background:url("./images/lastt.png") no-repeat center;
+}
+*html .df_page_btn1
+{
+	_background:none; 
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='./images/first.png'); 
+}
+*html .df_page_btn2
+{
+	_background:none; 
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='./images/pre.png'); 
+}
+*html .df_page_btn3
+{
+	_background:none; 
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='./images/nextt.png'); 
+}
+*html .df_page_btn4
+{
+	_background:none; 
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='./images/lastt.png'); 
+}
+.df_page_size_set{
+    margin:2px 2px 2px 2px;
+    width:20px;
+	height:15px;
+	border: 1px solid #D2D2D2;
+    float:left;
+}
+.df_page_size_label{
+    float:left;
+}
+.df_diag{
+	min-height:170px;
+	width:580px;
+	float:left;
+	border:1px dashed #d2d2d2;
+	word-wrap:break-word;
+}
+.df_diag_ie{
+	height:170px;
+	width:560px;
+	float:left;
+	border:1px dashed #d2d2d2;
+	word-wrap:break-word;
+	_margin:20px 0 0 10px;
+}
+
+.GatewayName{
+	font-family:"微软雅黑";
+	font-size:12px;
+	font-weight:bold;
+	color:#FFFFFF;
+	position: absolute;
+}
+.GatewayType{
+	font-family:"微软雅黑";
+	font-size:12px;
+	font-weight:bold;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+.welcom{
+	font-family:"微软雅黑";
+	font-size:12px;
+	color:#00399E;
+	color:#ffffff;
+	font-weight:bold;
+}
+.logout{
+	font-family:"微软雅黑";
+	font-size:12px;
+	color:#0436A5;
+	color:#ffffff;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:none;
+	cursor:pointer;
+}
+.Menu_L1_Link{
+	font-family:"微软雅黑";
+	font-size:16px;
+	font-weight:bold;
+	color:#000000;
+	text-decoration:none;
+	text-align:center;
+	cursor:pointer;
+	width:100px;
+	height:50px;
+	line-height: 50px;
+	background:#e6e6e6;
+	border-bottom: 2px solid #FFFFFF;
+	list-style: none;
+	border-radius: 100px;
+}
+.Menu_L1_Active{
+	font-family:"微软雅黑";
+	font-size:16px;
+	font-weight:bold;
+	color:#ffffff;
+	text-decoration:none;
+	text-align:center;
+	cursor:pointer;
+	width:100px;
+	height:50px;
+	line-height: 50px;
+	/* background:#2396f3; */
+    background-image: url(./images/selected_bg.png);
+	list-style: none;
+	border-bottom: 2px solid #FFFFFF;
+	border-radius: 100px;
+}
+table,tr,td{
+	margin:0;
+	padding:0;
+	border:0;
+	border-collapse:collapse;
+}
+ul,li{
+	margin:0;
+	padding:0;
+}
+A:link{TEXT-DECORATION:NONE;}
+.Menu_L2_Link{
+	font-family:"微软雅黑";
+	font-size:13px;
+	font-weight:bold;
+	color:#000000;
+	text-decoration:none;
+	text-align:left;
+	padding-left: 10px;
+	width:133px;
+	height:45px;
+	line-height:45px;
+	cursor:pointer;
+	list-style-type:none;
+	background: #f5f5f5;
+	border-bottom: 2px solid #ffffff;
+}
+.Menu_L2_Active{
+	font-family:"微软雅黑";
+	font-size:13px;
+	font-weight:bold;
+	color:#000000;
+	text-decoration:none;
+	text-align:left;
+	padding-left: 10px;
+	width:133px;
+	min-height:45px;
+	line-height:45px;
+	cursor:pointer;
+	list-style-type:none;
+	background: #f5f5f5;
+	border-bottom: 2px solid #ffffff;
+}
+.Item_L2{
+	font-family:"微软雅黑";
+	font-size:12px;
+	font-weight:bold;
+	color:#000000;
+	text-decoration:none;
+	text-align:left;
+	height:40px;
+	line-height:40px;
+	background:#ffffff;
+	cursor:pointer;
+	border-right:1px solid #d1d1d1;
+	padding-left: 13px;
+	width:119px;
+	valign:middle;
+}
+.Item_L1{
+	cursor:pointer;
+	font-family:"微软雅黑";
+	font-size:12px;
+	font-weight:bold;
+	color:#2396f3;
+	text-decoration:none;
+	text-align:left;
+	height:40px;
+	line-height:40px;
+	background:#ffffff;
+	border-right:1px solid #d1d1d1;
+	padding-left: 13px;
+	width:119px;
+}
+
+.Item_NONE{
+}
+
+.menu_two_table{
+	margin-top:7px;
+	text-align:center;
+}
+
+.color_black{
+	color:#000000;
+}
+
+.f_bottom_border{
+	width:100%;
+	font-family:"微软雅黑";
+	h_eight:6px;
+	background:#d1d1d1;
+	text-align:center;
+}
+
+.f_top{
+	height:100px;
+	width:958px;
+	margin:auto;
+}
+
+.f_bottom{
+	height:25px;
+	width:958px;
+	clear:left;
+	margin:auto;
+}
+
+.f_main_bg{
+	margin:auto;
+	width:958px;
+}
+</style>
+<script>
+var eventID; 
+var currentMousePosition1;//记录鼠标坐标  
+var currentMousePosition2;   
+var timeout = 300*1000;  //设定超时时间  
+var currentSecond = 0; 
+function init()
+{
+	currentMousePosition1 = "";  
+  currentMousePosition2 = "";  
+	eventID = setInterval(CheckTime,1000);
+}
+function mousePos(e)
+{  
+   var x,y;  
+   var e = e||window.event;  
+   return {   
+	   x:e.clientX,  
+       y:e.clientY
+   };  
+};  
+
+function GetXYPosition(e)
+{  
+  currentMousePosition2 = mousePos(e).x+','+mousePos(e).y;
+};  
+function CheckTime()
+{  
+    if(currentMousePosition1 == currentMousePosition2){  
+        currentSecond = currentSecond+1000;  
+        if(currentSecond>timeout){  
+            clearInterval(eventID);  
+            //DTS2017070800402
+            log_out();
+            alert("You have timed out, please log in again!");
+        }  
+    }  
+    else {  
+        currentSecond = 0;  
+        currentMousePosition1 = currentMousePosition2;  
+    }  
+}
+	
+	
+	
+	
+</script>
+</head>
+<body onLoad="init()">
+<div id="content" onclick="GetXYPosition(event)">
+<div class="f_top">
+	<table style="border-collapse:collapse;">	
+		<tr>
+			<td id="logo" style="position:relative;height:100px" colspan="3" border="0" cellpadding="0" cellspacing="0" bgcolor="#0085d1">
+				<div style="width:190px;height:80px;margin-left:20px">
+					<!-- <img src="./images/cdmc_logo.png" height="80px" width="190px"> -->
+				</div>
+			</td>
+			<td >
+	
+			</td>
+		</tr>
+		<tr>
+			<!-- <td width="164" rowspan="3" align="center" bgcolor="#94b2c5" class="LocationDisplay" id="LocationDisplay">状态</td>	 -->
+		</tr>
+	</table>
+	<div style="position:absolute;top:70px;bottom:0px;right:25px;padding:0px;">
+		<span class="welcom">&nbsp;&nbsp;&nbsp;</span> 
+		<span class="logout" id="logout" onclick="log_out();">Logout</span>
+	</div>
+	<div style="position:absolute;top:58px;width:80px;height:18px;left:660px;display:none">
+		<span class="GatewayType" id="gatewaytype"></span>
+	</div>
+</div>
+<div id="f_main_bg" class="f_main_bg" position="relative">
+	<table style="border-collapse:collapse;" border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td width="260" height="600" valign="top" class="Item_NONE" >  
+				<div id="menu_layer1">
+				</div> 
+				<div id="menu_layer2" style="position:absolute;left:100px;top:0px">
+				</div>
+				<div id="menu_layer3"  bgcolor="#94b2c5" style=" !important;padding:0;border:0;">
+				</div>
+			</td>
+			<td bgcolor="white" height="600" width="644">
+				<div style="height:20px"></div>
+				<div id="content_layer" style="min-height:600px;height:auto !important;height:100px;">Body part</div>
+			</td>
+		<!--	<td bgcolor="white" height="600" width="644"><img src="./images/panelx.gif" width="644" border="0" height="9" valign="top"><div id="content_layer" style="min-height:600px;height:auto !important;height:100px;">正文部分</div></td> -->
+		</tr>
+	</table>
+</div>
+
+<div class="f_bottom" style="display:none;">
+	<table style="border-collapse:collapse;" border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td colspan="2" height="25" width="958"></td>
+		</tr>
+	</table>
+</div>
+<div class="f_bottom_border"> </div>
+<div id="request_layer" style="display:none;position:absolute;"></div>
+<div id="response_layer" style="display:none;position:absolute;"></div> 
+</div>
+<input type="hidden" name="userlevel" id="userlevel" value="1"/>
+
+</body>
+<script>
+	CONFIG_WEB_USER = 0;
+</script>
+<script type="text/javascript" src="./script/action.js?v=time"></script>
+<script type="text/javascript" src="./script/Sta_Overview_action.js?v=time"></script>
+<script type="text/javascript" src="./script/Sta_WAN_action.js?v=time"></script>
+<script type="text/javascript" src="./script/Sta_LAN_action.js?v=time"></script>
+<script type="text/javascript" src="./script/Net_LAN_ipv4_DNS.js?v=time"></script>
+<script type="text/javascript" src="./script/Sta_Voice_action.js?v=time"></script>
+<script type="text/javascript" src="./script/Sta_Management_action.js?v=time"></script>
+<script type="text/javascript" src="./script/Sta_telligent_action.js?v=time"></script>
+<script type="text/javascript" src="./script/Sta_Location_action.js?v=time"></script>
+<script type="text/javascript" src="./script/Sta_Config_action.js?v=time"></script>
+<script type="text/javascript" src="./script/Net_Network_action.js?v=time"></script>
+<script type="text/javascript" src="./script/Net_LAN_action.js?v=time"></script>
+<script type="text/javascript" src="./script/Net_WLAN_action.js?v=time"></script>
+<script type="text/javascript" src="./script/Net_Management_action.js?v=time"></script>
+<script type="text/javascript" src="./script/Net_QoS_action.js?v=time"></script>
+<script type="text/javascript" src="./script/Net_NTP_action.js?v=time"></script>
+<script type="text/javascript" src="./script/Net_Route_action.js?v=time"></script>
+<script type="text/javascript" src="./script/Secu_WAN_action.js?v=time"></script>
+<script type="text/javascript" src="./script/Secu_Firewall_action.js?v=time"></script>
+<script type="text/javascript" src="./script/Secu_MAC_action.js?v=time"></script>
+<script type="text/javascript" src="./script/Secu_port_action.js?v=time"></script>
+<script type="text/javascript" src="./script/App_DDNS_action.js?v=time"></script>
+<script type="text/javascript" src="./script/App_PonMode_action.js?v=time"></script>
+<script type="text/javascript" src="./script/App_NAT_action.js?v=time"></script>
+<script type="text/javascript" src="./script/App_UPnP_action.js?v=time"></script>
+<script type="text/javascript" src="./script/App_Voice_action.js?v=time"></script>
+<script type="text/javascript" src="./script/App_IGMP_action.js?v=time"></script>
+<script type="text/javascript" src="./script/App_Application_action.js?v=time"></script>
+<script type="text/javascript" src="./script/App_Wbuniversal_action.js?v=time"></script>
+<script type="text/javascript" src="./script/Mng_User_action.js?v=time"></script>
+<script type="text/javascript" src="./script/Mng_Device_action.js?v=time"></script>
+<script type="text/javascript" src="./script/Mng_Log_action.js?v=time"></script>
+<script type="text/javascript" src="./script/Mng_Maintain_action.js?v=time"></script>
+<script type="text/javascript" src="./script/Dia_Diagnose_action.js?v=time"></script>
+<script type="text/javascript" src="./script/Dia_Busdiagnose_action.js?v=time"></script>
+<script type="text/javascript" src="./script/Mng_Upgrade_action.js?v=time"></script>
+<script type="text/javascript" src="./script/menu.js?v=time"></script>
+<script type="text/javascript" src="./script/init.js?v=time"></script>
+</html>
