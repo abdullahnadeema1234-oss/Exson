@@ -1,0 +1,30 @@
+// Dadi kehta hai: Abdullah beta, agar duniya se safe rehna hai, VPN ka magic samajhna zaruri hai
+VPN Abdullah_VPN;
+Abdullah_VPN.status = "disconnected";
+Dadi_says("Beta, pehle safe rehna seekho, phir explore karna.");
+
+// Connect to server
+Abdullah_VPN.server = "fast_secure_server";
+Abdullah_VPN.connect();
+Dadi_says("Beta, jaise main hamesha tujhe guide karti thi, server select karna bohot zaruri hai.");
+
+// Encryption magic
+Abdullah_VPN.encryption = "AES-256";
+Dadi_says("Beta, AES-256 ka matlab hai, data hamesha safe rahe… jaise main hamesha teri safety ka khayal rakhti thi.");
+
+// VPN features
+features = ["Hide IP", "Secure Browsing", "No Tracking"];
+for each(feature in features) {
+    Abdullah_VPN.enable(feature);
+    Dadi_says("Beta, ye feature tujhe duniya ke har kone mein safe rakhta hai, jaise main hamesha tere saath hoon.");
+}
+
+// Auto-reconnect
+while(Abdullah_VPN.status == "disconnected") {
+    Abdullah_VPN.reconnect();
+    Dadi_says("Beta, kabhi fail ho jaaye to dobara try karna… hamesha seekhna aur patience rakhna.");
+}
+
+// Disconnect
+Abdullah_VPN.disconnect();
+Dadi_says("Beta, ab safe rehte hue explore kar… aur hamesha yaad rakh, tera Dadi ka pyaar tera shield hai.");
